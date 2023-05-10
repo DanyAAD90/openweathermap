@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t frontend . && docker run --rm -i -p 9000:9000 --name frontend -t frontend
+

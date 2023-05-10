@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8000:8000"
+    volumes: 
+      - ./frontend/node_modules
+      - /node_modules
+    depends_on:
+      - backend
+    command: npm run start
+  backend:
+    build: ./backend
+    ports:
+      - "9000:9000"
+    volumes: 
+      - ./backend/node_modules
+      - /node_modules
+    command: npm run start
