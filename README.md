@@ -2,7 +2,7 @@
 
 I created API key from my account on `https://openweathermap.org/` and created the link directly to my trigger `http://api.openweathermap.org/data/2.5/weather?q={API key}`. I paste it in firefox and the program returned syntax in json:
 
-![obraz](https://github.com/DanyAAD90/eficode/assets/117837948/1b85e0a3-a6ca-4d58-b84b-5da5c679e1e4)
+![weather](https://github.com/DanyAAD90/eficode/assets/117837948/7a9dbe32-2d23-4b1b-b43c-2505270fc875)
 
 ### Docker
 
