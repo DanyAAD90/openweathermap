@@ -10,23 +10,13 @@ Next in `~/eficode/weatherapp/frontend` and `~/eficode/weatherapp/backend` I use
 Then in `~/eficode/weatherapp/frontend` and `~/eficode/weatherapp/backend` I created Dockerfile's and `do` files as script to create docker. 
 In `~/eficode/weatherapp/` I created `docker-compose.yml` which can run a both of containers. I include in `docker-compose.yml` required information about volumes, line: `command: npm run start` for frontend and backend are enabling hot reload.
 
-### Node and React development
+-----
+About Node.js and React framework
 
-*Node and React applications are highly popular technologies. Understanding them will give you an advantage in front- and back-end development projects.*
+-----
+About Testing and Robot framework
 
-* The application now only reports the current weather. It should probably report the forecast e.g. a few hours from now. (tip: [openweathermap api](https://openweathermap.org/forecast5))
-
-* There are [eslint](http://eslint.org/) errors. Sloppy coding it seems. Please help.
-
-* The app currently reports the weather only for location defined in the *backend*. Shouldn't it check the browser location and use that as the reference for making a forecast? (tip: [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation))
-
-### Testing
-
-*Test automation is key in developing good quality applications. Finding bugs in early stages of development is valuable in any software development project. With Robot Framework you can create integration tests that also serve as feature descriptions, making them exceptionally useful.*
-
-* Create automated tests for the application. (tip: [mocha](https://mochajs.org/))
-
-* Create [Robot Framework](http://robotframework.org/) integration tests. Hint: Start by creating a third container that gives expected weather data and direct the backend queries there by redefining the **MAP_ENDPOINT**.
+-----
 
 ### Cloud
 
