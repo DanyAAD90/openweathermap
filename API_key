@@ -1,2 +1,5 @@
+# Displays current weather:
 http://api.openweathermap.org/data/2.5/weather?q=Lodz&appid=f4c80dd178ebd65b3fbfff960036172f
 
+#forecast for a few hours:
+http://api.openweathermap.org/data/2.5/forecast?lon=19.46&lat=51.75&hourly=1&=Lodz&appid=f4c80dd178ebd65b3fbfff960036172f

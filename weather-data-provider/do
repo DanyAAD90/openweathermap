@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t weather-data-provider . && docker run --rm -i -p 3000:3000 --name weather-data-provider -t weather-data-provider
+

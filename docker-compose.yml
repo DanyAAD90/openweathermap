@@ -6,8 +6,11 @@ services:
     ports:
       - "8000:8000"
     volumes: 
-      - ./frontend/node_modules
+      - /home/crasher/eficode/weatherapp/frontend/node_modules
       - /node_modules
+    #environment: 
+    #  API_ENDPOINT: "http://backend:9000"
+    #   API_ENDPOINT: "http://0.0.0.0:9000"
     depends_on:
       - backend
     command: npm run start
@@ -16,6 +19,22 @@ services:
     ports:
       - "9000:9000"
     volumes: 
-      - ./backend/node_modules
+      - /home/crasher/eficode/weatherapp/backend/node_modules
       - /node_modules
+    #environment:
+    #  MAP_ENDPOINT: "http://weather-data-provider:8000"
+    #  MAP_ENDPOINT: "http://weather-data-provider:3000"
+    #  MAP_ENDPOINT: "http://0.0.0.0:3000"
+    depends_on:
+      - weather-data-provider
     command: npm run start
+  weather-data-provider:
+    #image: weather-provider:latest
+    build: ./weather-data-provider
+    ports: 
+       - "3000:3000"
+    volumes: 
+       - /home/crasher/eficode/weatherapp/weather-data-provider/node_modules
+       - /node_modules
+    
+
