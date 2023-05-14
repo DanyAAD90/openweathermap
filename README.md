@@ -1,5 +1,7 @@
 # Infractructure for weather application
 
+Below is a graph illustrating the IaC infrastructure.
+
 ```mermaid
 graph LR
 A[API developer Machine] --> B(Dockerfile)
