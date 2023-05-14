@@ -1,0 +1,3 @@
+ansible-playbook provisioning.yml -i hosts
+
+ansible-playbook createvm.yml

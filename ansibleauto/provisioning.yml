@@ -1,0 +1,19 @@
+---
+- name: Provisioning for Docker Compose
+  hosts: all
+  become: true
+
+  #tasks:
+  #  - name: Install Docker
+  #    apt:
+  #      name: docker.io
+  #      state: present
+  #
+  #  - name: Install Docker Compose
+  #    apt:
+  #      name: docker-compose
+  #      state: present
+  #
+  tasks:
+    - name: Run script
+      script: /home/crasher/eficode/weatherapp/install_package.sh
