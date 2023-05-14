@@ -1,4 +1,4 @@
-# Infractructure for weather application
+# Infrastructure for weather application
 
 Below is a graph illustrating the IaC infrastructure.
 
