@@ -12,6 +12,6 @@
       service:
         name: docker
         state: started
-		
-	- name: provisioning
-      script: /root/ansible/install_package.sh	
+
+    - name: provisioning
+      script: /root/ansible/install_package.sh
