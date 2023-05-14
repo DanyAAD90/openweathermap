@@ -1,6 +1,0 @@
-[server01]
-#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root
-#10.2.0.4 ansible_ssh_pass=xxx ansible_ssh_user=root
-
-[server01:vars]
-ansible_python_interpreter=/usr/bin/python3

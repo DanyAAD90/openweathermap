@@ -1,0 +1,17 @@
+- name: Install Docker and Start app on local
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+		
+	- name: provisioning
+      script: /root/ansible/install_package.sh	

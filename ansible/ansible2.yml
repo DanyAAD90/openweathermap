@@ -1,0 +1,43 @@
+
+- name: Test connectivity to target servers
+  hosts: all
+  run_once: true
+  gather_facts: false
+  tasks:
+    - name: Create CT
+      community.general.proxmox:
+        vmid: 105
+        api_host: devops
+        api_user: root@pam
+        api_password: xxx
+        api_token_id: token_xxx
+        api_token_secret: xxx
+        node: devops
+        hostname: examtask
+        password: xxx
+        ostemplate: 'local:vztmpl/ubuntu-20.04-standard_20.04-1_amd64.tar.gz'
+        description: created with ansible
+        cores: 2
+        timeout: 100
+        netif: '{"net0":"name=eth0,ip=dhcp,ip6=dhcp,bridge=vmbr0"}'
+        disk: 8
+        features: nesting=1
+        memory: 2048
+        swap: 1024
+        nameserver: 192.168.122.1
+        searchdomain: devops.local
+        unprivileged: 1
+        storage: local
+        onboot: true
+        state: present
+    - name: Start container
+      community.general.proxmox:
+        vmid: 105
+        api_user: root@pam
+        api_password: xxx
+        api_host: devops
+        api_token_id: token_xxx
+        api_token_secret: xxx
+        state: started
+        timeout: 90
+
