@@ -19,16 +19,16 @@ First of all I created API key from my account on `https://openweathermap.org/` 
 
 I paste it in firefox and the program returned syntax in json:
 
-![weather](https://github.com/DanyAAD90/eficode/assets/117837948/7a9dbe32-2d23-4b1b-b43c-2505270fc875)
+![weather](https://github.com/DanyAAD90/x/assets/117837948/7a9dbe32-2d23-4b1b-b43c-2505270fc875)
 
 ### Docker
 
 Before starting the task related to Docker, I had to perform the following actions.\
 On my localhost I created eficode folder.\
-In`~/eficode/weatherapp/frontend` and `~/eficode/weatherapp/backend` I used command:\
+In`~/x/weatherapp/frontend` and `~/x/weatherapp/backend` I used command:\
 `npm i && npm start`.\
-Then in `~/eficode/weatherapp/frontend` and `~/eficode/weatherapp/backend` I created `Dockerfile's` and `do` files as script to create docker.\
-Next in `~/eficode/weatherapp/` I created `docker-compose.yml` which can run a both of containers.\
+Then in `~/x/weatherapp/frontend` and `~/x/weatherapp/backend` I created `Dockerfile's` and `do` files as script to create docker.\
+Next in `~/x/weatherapp/` I created `docker-compose.yml` which can run a both of containers.\
 I include in `docker-compose.yml` required information about volumes I used:\
 `npm run` for frontend and backend are enabling hot reload.
 
