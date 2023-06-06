@@ -24,7 +24,7 @@ I paste it in firefox and the program returned syntax in json:
 ### Docker
 
 Before starting the task related to Docker, I had to perform the following actions.\
-On my localhost I created eficode folder.\
+On my localhost I created x folder.\
 In`~/x/weatherapp/frontend` and `~/x/weatherapp/backend` I used command:\
 `npm i && npm start`.\
 Then in `~/x/weatherapp/frontend` and `~/x/weatherapp/backend` I created `Dockerfile's` and `do` files as script to create docker.\
@@ -60,7 +60,7 @@ The First thing what I did was building three containers with equivalent command
 `docker build -t weather-data-provider:latest`
 
 When creating the infrastructure for a weather application, I decided to use a serverless solution.\
-To set up the weather service I have been choosen Azure portal. On my account I have been created resource group named `eficode`.\
+To set up the weather service I have been choosen Azure portal. On my account I have been created resource group named `x`.\
 In this resource group i created Container registry `openweathermap`.\
 Locally, in te terminal, I executed several commands:\
 `docker login operweathermap.azurecr.io`\
@@ -77,7 +77,7 @@ In Azure Container Apps service I created three container apps. I am hosting the
 `https://wbackend.internal.purplegrass-e2305b4d.eastus.azurecontainerapps.io/` as weather-backend\
 `https://wdataprovider.purplegrass-e2305b4d.eastus.azurecontainerapps.io/` as weather-data-provider
 
-Before previous step I created Container Apps Environment service with name `managedEnvironment-eficode-acf6` where I see that three container apps (screen on weatherapp folder).  
+Before previous step I created Container Apps Environment service with name `managedEnvironment-x-acf6` where I see that three container apps (screen on weatherapp folder).  
 
 ### Ansible
 
