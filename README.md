@@ -99,5 +99,3 @@ Then, by running necessary preliminary commands:\
 to start the ansible playbook:\
 `ansible-playbook ansible1.yml -vvv`
 can be executed to install the remaining services.
-  
-Thank you for your time.
